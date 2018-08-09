@@ -30,6 +30,11 @@
             <artifactId>netty-all</artifactId>
             <version>${netty.version}</version>
         </dependency>
+    
+    <!--这个包一般用在非web项目中，
+如果是web项目，就会有web组件（servlet），
+这个包的作用是在非web项目中使用web项目的servlet组件。
+如：在使用cxf发布webService的时候会用到这个geronimo-servlet包-->
         <dependency>
             <groupId>org.apache.geronimo.specs</groupId>
             <artifactId>geronimo-servlet_3.0_spec</artifactId>
